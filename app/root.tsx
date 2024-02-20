@@ -21,11 +21,11 @@ export const links: LinksFunction = () => [
 	},
 	{
 		rel: "stylesheet",
-		href: tailwindBase
+		href: globalCSS
 	},
 	{
 		rel: "stylesheet",
-		href: globalCSS
+		href: tailwindBase
 	}
 ]
 
