@@ -17,7 +17,8 @@ export const links: LinksFunction = () => [
 	{
 		rel: "preload",
 		href: "/fonts/inter-latin-400-normal.woff2",
-		as: "font"
+		as: "font",
+		crossOrigin: "anonymous"
 	},
 	{
 		rel: "stylesheet",
