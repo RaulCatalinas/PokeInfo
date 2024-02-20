@@ -1,3 +1,4 @@
+// Remix
 import type { LinksFunction } from "@remix-run/node"
 import {
 	Links,
@@ -8,12 +9,23 @@ import {
 	ScrollRestoration
 } from "@remix-run/react"
 
+import globalCSS from "./css/global.css"
+// CSS
 import tailwindBase from "./tailwind.css"
 
 export const links: LinksFunction = () => [
 	{
+		rel: "preload",
+		href: "/fonts/inter-latin-400-normal.woff2",
+		as: "font"
+	},
+	{
 		rel: "stylesheet",
 		href: tailwindBase
+	},
+	{
+		rel: "stylesheet",
+		href: globalCSS
 	}
 ]
 
