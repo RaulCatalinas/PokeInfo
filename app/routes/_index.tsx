@@ -1,5 +1,8 @@
-import SearchForm from "@/components/SearchForms"
+// Remix
 import type { MetaFunction } from "@remix-run/node"
+
+// Components
+import SearchForm from "@/components/SearchForms"
 
 export const meta: MetaFunction = () => {
 	return [
