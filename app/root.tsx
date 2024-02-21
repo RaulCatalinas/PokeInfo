@@ -13,6 +13,9 @@ import {
 import globalCSS from "./css/global.css"
 import tailwindBase from "./tailwind.css"
 
+// Third-Party CSS
+import toastifyCSS from "toastify-js/src/toastify.css"
+
 export const links: LinksFunction = () => [
 	{
 		rel: "preload",
@@ -27,6 +30,10 @@ export const links: LinksFunction = () => [
 	{
 		rel: "stylesheet",
 		href: tailwindBase
+	},
+	{
+		rel: "stylesheet",
+		href: toastifyCSS
 	}
 ]
 

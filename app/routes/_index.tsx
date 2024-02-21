@@ -2,7 +2,10 @@
 import type { MetaFunction } from "@remix-run/node"
 
 // Components
-import SearchForm from "@/components/SearchForms"
+import ShareButton from "@/components/buttons/ShareButton"
+import DropdownContact from "@/components/dropdowns/DropdownContact"
+import DropdownLanguage from "@/components/dropdowns/DropdownLanguage"
+import SearchForm from "@/components/forms/SearchForms"
 
 export const meta: MetaFunction = () => {
 	return [
@@ -13,8 +16,15 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
 	return (
-		<main>
-			<SearchForm />
-		</main>
+		<>
+			<header className="p-2 m-3 bg-green-700 flex flex-row items-center justify-center gap-4">
+				<DropdownContact />
+				<DropdownLanguage />
+				<ShareButton />
+			</header>
+			<main>
+				<SearchForm />
+			</main>
+		</>
 	)
 }

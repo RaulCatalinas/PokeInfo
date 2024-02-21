@@ -2,7 +2,7 @@ import { Form } from "@remix-run/react"
 
 export default function SearchForm() {
 	return (
-		<div className="flex flex-col items-center m-4 mt-8 mb-8">
+		<div className="flex flex-col items-center m-3">
 			<Form
 				className="flex flex-col w-full p-4 border border-gray-200 rounded-md shadow-sm md:w-max"
 				method="POST"
