@@ -1,0 +1,21 @@
+---
+import SearchButton from "../buttons/SearchButton";
+---
+
+<form class="flex flex-col p-4 rounded-lg bg-indigo-200 w-[400px]">
+  <label
+    for="search"
+    class="text-lg font-medium text-black mb-2 text-pretty text-center"
+  >
+    Pokémon name or Pokédex number <span
+      class="text-red-500 ml-1 inline-block mt-1 font-bold">*</span
+    >:
+  </label>
+  <input
+    type="search"
+    id="search"
+    class="w-full p-2 text-sm text-gray-700 border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 text-center placeholder:text-center placeholder:text-base disabled:cursor-not-allowed disabled:bg-slate-600"
+    placeholder="Pokémon name or Pokédex number"
+  />
+  <SearchButton client:load />
+</form>
