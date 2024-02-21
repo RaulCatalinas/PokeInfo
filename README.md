@@ -1,38 +1,67 @@
-# Welcome to Remix!
+# PokeInfo
 
-- [Remix Docs](https://remix.run/docs)
+PokeInfo is a website where users can search for information about Pokémons.
 
-## Development
+To perform the search, users enter the name of the Pokémon, Pokédex number, etc.
 
-From your terminal:
+To provide information about the requested Pokémon, the PokéAPI will be used (unless there's a better API).
 
-```sh
-npm run dev
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/RaulCatalinas/PokeInfo.git
+  #or
+  git clone git@github.com:RaulCatalinas/PokeInfo.git
+  #or
+  gh repo clone RaulCatalinas/PokeInfo
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
+Go to the project directory
 
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
+```bash
+  cd PokeInfo
 ```
 
-Then run the app in production mode:
+Install dependencies
 
-```sh
-npm start
+```bash
+  npm install
+  #or
+  yarn install
+  #or
+  pnpm install
+  #or
+  bun install
 ```
 
-Now you'll need to pick a host to deploy it to.
+Start the server
 
-### DIY
+```bash
+  npm run dev
+  #or
+  yarn run dev
+  #or
+  pnpm run dev
+  #or
+  bun run dev
+```
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+## Contributing
 
-Make sure to deploy the output of `remix build`
+Contributions are always welcome!
 
-- `build/`
-- `public/build/`
+See [CONTRIBUTING.md](CONTRIBUTING.md) for ways to get started.
+
+## Feedback
+
+If you have any feedback, please reach out to us at <raulcatalinas@gmail.com>
+
+## License
+
+The license information is contained in the file [LICENSE.md](LICENSE.md).
+
+## Authors
+
+- [Raul Catalinas Esteban](https://github.com/RaulCatalinas)
