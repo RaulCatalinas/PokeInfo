@@ -1,5 +1,5 @@
 // Remix
-import type { LinksFunction } from "@remix-run/node"
+import type { LinksFunction, MetaFunction } from "@remix-run/node"
 import {
 	Links,
 	LiveReload,
@@ -15,6 +15,16 @@ import tailwindBase from "./tailwind.css"
 
 // Third-Party CSS
 import toastifyCSS from "toastify-js/src/toastify.css"
+
+// Components
+import Header from "./components/headers/Header"
+
+export const meta: MetaFunction = () => {
+	return [
+		{ title: "PokeInfo" },
+		{ name: "description", content: "Website for information about Pokemon" }
+	]
+}
 
 export const links: LinksFunction = () => [
 	{
@@ -47,6 +57,7 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
+				<Header />
 				<Outlet />
 				<ScrollRestoration />
 				<Scripts />
