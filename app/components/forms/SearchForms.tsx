@@ -26,7 +26,7 @@ export default function SearchForm() {
 				/>
 				<button
 					type="submit"
-					className="mt-3 inline-flex items-center px-4 py-2 text-lg font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-500"
+					className="mt-3 inline-flex items-center px-4 py-2 text-lg font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-500 hover:scale-105 active:scale-90"
 				>
 					<span className="mx-auto">Search</span>
 				</button>
