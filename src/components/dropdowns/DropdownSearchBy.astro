@@ -12,7 +12,7 @@ import { firstLetterToUpperCase } from "@/utils/first-letter-to-uppercase";
 const searchTypes = Object.keys(API_SEARCH_URLS);
 ---
 
-<DropdownLayout id="search-by">
+<DropdownLayout id="search-by" labelText="Search by" textColor="black">
   {
     searchTypes.map((searchType) => {
       return (
