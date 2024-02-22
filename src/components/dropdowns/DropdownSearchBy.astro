@@ -1,0 +1,23 @@
+---
+// Components
+import DropdownLayout from "@/layouts/DropdownLayout.astro";
+import Option from "./Option.astro";
+
+// Constants
+import { API_SEARCH_URLS } from "@/constants/api";
+
+// Utils
+import { firstLetterToUpperCase } from "@/utils/first-letter-to-uppercase";
+
+const searchTypes = Object.keys(API_SEARCH_URLS);
+---
+
+<DropdownLayout id="search-by">
+  {
+    searchTypes.map((searchType) => {
+      return (
+        <Option value={searchType} text={firstLetterToUpperCase(searchType)} />
+      );
+    })
+  }
+</DropdownLayout>
