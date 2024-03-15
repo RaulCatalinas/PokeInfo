@@ -1,11 +1,11 @@
 ---
 interface Props {
-  labelText: string;
-  id: string;
-  textColor?: string;
+  labelText: string
+  id: string
+  textColor?: string
 }
 
-const { labelText, id, textColor = "white" } = Astro.props;
+const { labelText, id, textColor = 'white' } = Astro.props
 ---
 
 <div class="flex flex-col items-center justify-center">
@@ -13,7 +13,7 @@ const { labelText, id, textColor = "white" } = Astro.props;
     {labelText}
   </label>
   <select
-    id={id}
+    {id}
     class="p-2 text-base rounded cursor-pointer focus:border-blue-500"
   >
     <slot />

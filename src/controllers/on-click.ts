@@ -1,3 +1,3 @@
 export async function onClickController() {
-	console.log("Clicked")
+  console.log('Clicked')
 }
