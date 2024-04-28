@@ -2,6 +2,7 @@
 import ShareButton from '../buttons/ShareButton.astro'
 import Contact from '../contact/Contact.astro'
 import DropdownLanguage from '../dropdowns/DropdownLanguage.astro'
+import LinkAsButton from '../links/LinkAsButton.astro'
 ---
 
 <header
@@ -9,5 +10,11 @@ import DropdownLanguage from '../dropdowns/DropdownLanguage.astro'
 >
   <Contact />
   <DropdownLanguage />
+  <div class={`${Astro.url.pathname === '/contributors' ? 'hidden' : ''}`}>
+    <LinkAsButton href="/contributors" text="View contributors" />
+  </div>
+  <div class={`${Astro.url.pathname === '/' ? 'hidden' : ''}`}>
+    <LinkAsButton href="/" text="Back to home" />
+  </div>
   <ShareButton />
 </header>

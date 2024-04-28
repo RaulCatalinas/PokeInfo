@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets'
+
+interface Props {
+  contributorImageURL: string
+  contributorName: string
+  loadingImage: 'eager' | 'lazy'
+}
+
+const { contributorImageURL, contributorName, loadingImage } = Astro.props
+---
+
+<Image
+  src={contributorImageURL}
+  alt={contributorName}
+  width={125}
+  height={125}
+  loading={loadingImage}
+/>

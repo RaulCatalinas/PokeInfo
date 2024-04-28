@@ -1,0 +1,43 @@
+---
+// Types
+import type { Contributors } from '@/types/contributors'
+
+// Components
+import ContributorImage from './ContributorImage.astro'
+import ContributorsSocialNetworks from './ContributorsSocialNetworks.astro'
+
+// Layouts
+import ContributorLayout from '@/layouts/ContributorLayout.astro'
+import ContributorsLayout from '@/layouts/ContributorsLayout.astro'
+
+interface Props {
+  contributors: Contributors[]
+}
+
+const { contributors } = Astro.props
+---
+
+<ContributorsLayout>
+  {
+    contributors.map(({ name, imageURL, socialNetworks }, index) => {
+      return (
+        <ContributorLayout>
+          <h3 class="text-lg text-center">{name}</h3>
+
+          <ContributorImage
+            contributorImageURL={imageURL}
+            contributorName={name}
+            loadingImage={index <= 3 ? 'eager' : 'lazy'}
+          />
+
+          <div class="flex fle items-center justify-center mt-3 gap-2">
+            <ContributorsSocialNetworks
+              socialNetworks={socialNetworks}
+              loadingImage={index <= 3 ? 'eager' : 'lazy'}
+            />
+          </div>
+        </ContributorLayout>
+      )
+    })
+  }
+</ContributorsLayout>

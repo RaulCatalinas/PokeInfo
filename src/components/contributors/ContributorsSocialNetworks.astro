@@ -1,0 +1,32 @@
+---
+import type { SocialNetwork } from '@/types/contributors'
+import { Image } from 'astro:assets'
+
+interface Props {
+  socialNetworks: SocialNetwork[]
+  loadingImage: 'eager' | 'lazy'
+}
+
+const { socialNetworks, loadingImage } = Astro.props
+---
+
+{
+  socialNetworks.map(({ name, link, imageURL }) => {
+    return (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block md:hover:cursor-pointer md:hover:scale-110 md:active:scale-90"
+      >
+        <Image
+          src={imageURL}
+          alt={name}
+          width={35}
+          height={35}
+          loading={loadingImage}
+        />
+      </a>
+    )
+  })
+}
