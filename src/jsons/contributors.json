@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Raul Catalinas",
+    "imageURL": "https://avatars.githubusercontent.com/u/105791463?v=4",
+    "socialNetworks": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/CatalinasRaul",
+        "imageURL": "/social-networks/twitter.svg"
+      },
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/raulf1foreveryt_oficial",
+        "imageURL": "/social-networks/instagram.svg"
+      },
+      {
+        "name": "Facebook",
+        "link": "https://www.facebook.com/raul.catalinasesteban",
+        "imageURL": "/social-networks/facebook.svg"
+      },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/RaulCatalinas",
+        "imageURL": "/social-networks/github.svg"
+      }
+    ]
+  }
+]
