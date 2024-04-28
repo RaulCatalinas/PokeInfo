@@ -10,13 +10,11 @@ interface Props {
 const { href, imageURL, altText } = Astro.props
 ---
 
-<a {href} target="_blank" rel="noopener noreferrer">
-  <Image
-    src={imageURL}
-    alt={altText}
-    width={35}
-    height={35}
-    class="inline-block md:hover:cursor-pointer md:hover:scale-110 md:active:scale-90"
-    loading="eager"
-  />
+<a
+  {href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-block md:hover:cursor-pointer md:hover:scale-110 md:active:scale-90"
+>
+  <Image src={imageURL} alt={altText} width={35} height={35} loading="eager" />
 </a>
