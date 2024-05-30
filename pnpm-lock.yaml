@@ -18,8 +18,8 @@ dependencies:
     specifier: 7.6.0
     version: 7.6.0(astro@4.9.2)
   '@vercel/speed-insights':
-    specifier: 1.0.10
-    version: 1.0.10
+    specifier: 1.0.11
+    version: 1.0.11
   astro:
     specifier: 4.9.2
     version: 4.9.2(@types/node@20.12.8)(typescript@5.4.5)
@@ -2100,8 +2100,8 @@ packages:
       - supports-color
     dev: false
 
-  /@vercel/speed-insights@1.0.10:
-    resolution: {integrity: sha512-4uzdKB0RW6Ff2FkzshzjZ+RlJfLPxgm/00i0XXgxfMPhwnnsk92YgtqsxT9OcPLdJUyVU1DqFlSWWjIQMPkh0g==}
+  /@vercel/speed-insights@1.0.11:
+    resolution: {integrity: sha512-l9hzSNmJvb2Yqpgd/BzpiT0J0aQDdtqxOf3Xm+iW4PICxVvhY1ef7Otdx4GXI+88dVkws57qMzXiShz19gXzSQ==}
     requiresBuild: true
     peerDependencies:
       '@sveltejs/kit': ^1 || ^2
