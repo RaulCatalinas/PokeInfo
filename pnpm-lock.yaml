@@ -9,8 +9,8 @@ dependencies:
     specifier: 0.7.0
     version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.3.2)(typescript@5.4.5)
   '@astrojs/solid-js':
-    specifier: 4.3.0
-    version: 4.3.0(solid-js@1.8.17)(vite@5.2.13)
+    specifier: 4.4.0
+    version: 4.4.0(solid-js@1.8.17)(vite@5.2.13)
   '@astrojs/tailwind':
     specifier: 5.1.0
     version: 5.1.0(astro@4.10.2)(tailwindcss@3.4.4)
@@ -200,8 +200,8 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/solid-js@4.3.0(solid-js@1.8.17)(vite@5.2.13):
-    resolution: {integrity: sha512-oOtyNkwsRHHuFJ8kc2MUVVQTSZf3eO0evWQyITKBuCVl0JUUaFYkhnVKHwoc/gntQ1oYk79oAKWWexW9xXojAg==}
+  /@astrojs/solid-js@4.4.0(solid-js@1.8.17)(vite@5.2.13):
+    resolution: {integrity: sha512-nNX7x9dTcutb69yVGGC7/4vRECsV0dySmkl48AeV4qIAdCYXuH74Yu8KvPwRWRjtF0Z2Xp9ZgXG5KYCVHdBXJw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
       solid-devtools: ^0.30.1
